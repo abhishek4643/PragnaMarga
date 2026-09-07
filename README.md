@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧭 PragnaMarga
+# PragnaMarga
 
 ### **AI-Powered Career Path Navigator & Guidance Platform**
 
@@ -8,13 +8,13 @@ _Intelligent career mapping powered by machine learning_
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![AI Powered](https://img.shields.io/badge/🤖_AI-Powered-blueviolet?style=for-the-badge)](https://github.com/abhishek4643/PragnaMarga)
+[![AI Powered](https://img.shields.io/badge/_AI-Powered-blueviolet?style=for-the-badge)](https://github.com/abhishek4643/PragnaMarga)
 
 </div>
 
 ---
 
-## 📌 About
+## About
 
 **PragnaMarga** (Sanskrit: _"The Path of Wisdom"_) is an AI-driven career guidance platform that helps students and professionals discover their ideal career paths. By analyzing skills, interests, academic background, and market trends, PragnaMarga generates personalized career roadmaps with actionable steps.
 
@@ -22,21 +22,21 @@ _Intelligent career mapping powered by machine learning_
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 | Feature | Description |
 |---------|-------------|
-| 🧠 **AI Career Analysis** | ML-powered matching of skills to career opportunities |
-| 🗺️ **Interactive Roadmaps** | Visual career path with milestones and timelines |
-| 📊 **Skills Gap Analysis** | Identify what you need to learn for your dream role |
-| 📚 **Learning Resources** | Curated courses, certifications, and tutorials |
-| 📈 **Market Insights** | Real-time job market trends and salary data |
-| 🎯 **Goal Tracking** | Set career goals and track progress over time |
-| 💬 **AI Career Advisor** | Chat-based AI assistant for career queries |
+| **AI Career Analysis** | ML-powered matching of skills to career opportunities |
+| **Interactive Roadmaps** | Visual career path with milestones and timelines |
+| **Skills Gap Analysis** | Identify what you need to learn for your dream role |
+| **Learning Resources** | Curated courses, certifications, and tutorials |
+| **Market Insights** | Real-time job market trends and salary data |
+| **Goal Tracking** | Set career goals and track progress over time |
+| **AI Career Advisor** | Chat-based AI assistant for career queries |
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ```
 Frontend:       TypeScript · React · Next.js
@@ -51,7 +51,7 @@ License:        MIT
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ```bash
 # Clone the repository
@@ -76,7 +76,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
-## 🏗️ How It Works
+## How It Works
 
 ```
 ┌──────────────┐    ┌─────────────────┐    ┌──────────────────┐
@@ -93,7 +93,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 PragnaMarga/
@@ -110,7 +110,7 @@ PragnaMarga/
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
@@ -118,6 +118,6 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 <div align="center">
 
-_Guiding careers with the wisdom of AI_ 🧭
+_Guiding careers with the wisdom of AI_
 
 </div>
