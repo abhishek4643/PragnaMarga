@@ -42,6 +42,11 @@ PragnaMarga empowers aspiring software engineers by analyzing their existing ski
   <img src="./docs/architecture.svg" alt="PragnaMarga Architecture Flow" width="100%" />
 </p>
 
+* **Learner Ingest (Mobile UX / Document)**: Student profile, resume, and skill intake via Expo Document Picker and dynamic target role assessments.
+* **React Native (Expo 54 + React 19)**: Cross-platform iOS, Android, and web app with React Navigation v7 stack and TypeScript 5.9 typed interfaces.
+* **Skill Gap Engine (Roadmap & Scoring)**: Deterministic gap matrix scoring, curriculum mapping, and personalized milestone graph generation.
+* **Roadmap Cache (Storage / Cache)**: Offline-first persistence via AsyncStorage, active stage tracking, and checkpoint synchronization.
+
 ---
 
 ## Key Features
