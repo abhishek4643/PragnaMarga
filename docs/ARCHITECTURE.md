@@ -37,42 +37,44 @@ Technologies used across PragnaMarga and their architectural purpose:
 
 ---
 
-### 3. Directory Structure
+### 3. Folder Structure
+
+The project follows a clean, modular structure separating native screens, navigation stacks, design tokens, and skill algorithms:
 
 ```text
 CareerPathApp/
-├── assets/                         # Application Icons, Splash Screens & Graphics
-├── src/                            # React Native TypeScript Source
-│   ├── components/                 # Reusable Native UI Components
-│   │   ├── Button.tsx              # Styled TouchableOpacity Native Buttons
-│   │   ├── Card.tsx                # Elevated Surface Containers
-│   │   └── ProgressBar.tsx         # Animated Assessment Progress Indicator
-│   ├── screens/                    # Native Application Screen Views
-│   │   ├── HomeScreen.tsx          # Welcome Dashboard & Role Selection
-│   │   ├── AssessmentScreen.tsx    # Multi-Stage Dynamic Skill Evaluation
-│   │   ├── ResultScreen.tsx        # Skill Gap Breakdown & Competency Scores
-│   │   ├── RoadmapScreen.tsx       # Interactive Milestone Learning Timeline
-│   │   ├── ProfileScreen.tsx       # Student Academic & Target Role Overview
-│   │   ├── AccountDetailsScreen.tsx# Account Settings & Credential Management
-│   │   ├── HelpSupportScreen.tsx   # FAQ & Guidance Resources
-│   │   └── PrivacyScreen.tsx       # Privacy Policy & Document Handling Info
-│   ├── theme/                      # Design Tokens, Palette Colors & Typography
-│   └── utils/                      # Skill Scoring Math & Storage Utilities
-├── docs/                           # Complete Architecture & Engineering Docs
-│   ├── ARCHITECTURE.md             # System Topology & Algorithm Specifications
-│   ├── DESIGN.md                   # Design System & UI Specifications
-│   ├── MEMORY.md                   # Operational State & Milestone Log
-│   ├── PRD.md                      # Product Requirements & User Scenarios
-│   ├── RULES.md                    # Engineering Conventions & Coding Rules
-│   ├── TASKS.md                    # Phased Roadmap with 24 Deliverables
-│   ├── architecture.svg            # Custom 4-Card Vector Topology
-│   ├── palette.svg                 # 8-Swatch Design System Vector Palette
-│   └── principles.svg              # 4-Card Design Principles Vector
-├── App.tsx                         # Root Application Navigator & Theme Wrapper
-├── app.json                        # Expo 54 Configuration & App Metadata
-├── package.json                    # Dependencies & NPM Scripts
-├── tsconfig.json                   # Strict TypeScript Compiler Flags
-└── README.md                       # Repository Entry & Developer Guide
+|-- assets/                             # Application Icons, Splash Screens & Graphics
+|-- src/                                # React Native TypeScript Source
+|   |-- components/                     # Reusable Native UI Components
+|   |   |-- Button.tsx                  # Styled TouchableOpacity Native Buttons
+|   |   |-- Card.tsx                    # Elevated Surface Containers
+|   |   `-- ProgressBar.tsx             # Animated Assessment Progress Indicator
+|   |-- screens/                        # Native Application Screen Views
+|   |   |-- HomeScreen.tsx              # Welcome Dashboard & Role Selection
+|   |   |-- AssessmentScreen.tsx        # Multi-Stage Dynamic Skill Evaluation
+|   |   |-- ResultScreen.tsx            # Skill Gap Breakdown & Competency Scores
+|   |   |-- RoadmapScreen.tsx           # Interactive Milestone Learning Timeline
+|   |   |-- ProfileScreen.tsx           # Student Academic & Target Role Overview
+|   |   |-- AccountDetailsScreen.tsx    # Account Settings & Credential Management
+|   |   |-- HelpSupportScreen.tsx       # FAQ & Guidance Resources
+|   |   `-- PrivacyScreen.tsx           # Privacy Policy & Document Handling Info
+|   |-- theme/                          # Design Tokens, Palette Colors & Typography
+|   `-- utils/                          # Skill Scoring Math & Storage Utilities
+|-- docs/                               # Complete Architecture & Engineering Docs
+|   |-- ARCHITECTURE.md                 # System Topology & Algorithm Specifications
+|   |-- DESIGN.md                       # Design System & UI Specifications
+|   |-- MEMORY.md                       # Operational State & Milestone Log
+|   |-- PRD.md                          # Product Requirements & User Scenarios
+|   |-- RULES.md                        # Engineering Conventions & Coding Rules
+|   |-- TASKS.md                        # Phased Roadmap with 24 Deliverables
+|   |-- architecture.svg                # Custom 4-Card Vector Topology
+|   |-- palette.svg                     # 8-Swatch Design System Vector Palette
+|   `-- principles.svg                  # 4-Card Design Principles Vector
+|-- App.tsx                             # Root Application Navigator & Theme Wrapper
+|-- app.json                            # Expo 54 Configuration & App Metadata
+|-- package.json                        # Dependencies & NPM Scripts
+|-- tsconfig.json                       # Strict TypeScript Compiler Flags
+`-- README.md                           # Repository Entry & Developer Guide
 ```
 
 ---
@@ -80,43 +82,42 @@ CareerPathApp/
 ### 4. Skill Gap & Roadmap Processing Flow
 
 ```text
-Student Resume & Target Track (e.g., "Full-Stack AI Engineer")
-       │
-       ▼
-[ Assessment Screen ] ──────► Timed technical evaluation (15 Questions)
-       │
-       ▼
-[ Competency Scoring Engine ]
-       │
-       ├──── Core CS (DSA, OS, Networks) ────► 85% &bull; MASTERED
-       ├──── Frameworks (React, FastAPI) ────► 75% &bull; IN PROGRESS
-       └──── GenAI / Vector Stores ──────────► 40% &bull; CRITICAL GAP
-       │
-       ▼
-[ Graph Milestone Generator ]
-       │
-       ▼
-Personalized Learning Roadmap (Ordered by prerequisite hierarchy)
-       Stage 1: Python Advanced & Async IO
-       Stage 2: Vector Embeddings & Supabase pgvector
-       Stage 3: LLM Orchestration & Sandboxed Runtimes
+[ Student Resume & Target Track (e.g., "Full-Stack AI Engineer") ]
+                         |
+                         v
+[ Assessment Screen: Timed Multi-Stage Technical Evaluation ]
+                         |
+                         v
+[ Competency Scoring Engine: Category Weighting & Normalization ]
+                         |
+        +----------------+----------------+
+        |                                 |
+        v                                 v
+[ Skill Gap Matrix Analysis ]     [ Competency Scoring Verdicts ]
+(Core CS, APIs, Vector DBs)       (Mastered, In Progress, Gap)
+        |                                 |
+        +----------------+----------------+
+                         |
+                         v
+[ Graph Milestone Generator: Topological Prerequisite Sort ]
+                         |
+                         v
+[ Stage 1: Python Advanced & Async IO ]
+                         |
+                         v
+[ Stage 2: Vector Embeddings & Supabase pgvector ]
+                         |
+                         v
+[ Stage 3: LLM Orchestration & Sandboxed Runtimes ]
 ```
 
 ---
 
-### 5. Architectural Decision Records (ADRs)
+### 5. Key Architectural Decisions (ADRs)
 
-#### ADR-001: React Native 0.81 + Expo 54 Managed Workflow
-- **Context**: Developing separate native Android (Kotlin) and iOS (Swift) applications doubles maintenance effort and delays roadmap iterations.
-- **Decision**: Adopt the Expo 54 managed workflow with React Native 0.81.
-- **Consequence**: Single codebase deploys effortlessly across iOS, Android, and Web with native 60 FPS performance.
-
-#### ADR-002: React Navigation v7 Native Stack
-- **Context**: JavaScript-based tab navigators incur visual stutter during complex screen transitions on lower-end Android devices.
-- **Decision**: Use `@react-navigation/native-stack`, which leverages native Android `Fragment` and iOS `UINavigationController` primitives under the hood via `react-native-screens`.
-- **Consequence**: Ensures buttery-smooth native screen push/pop transitions with zero JS thread blocking.
-
-#### ADR-003: Deterministic Graph-Based Skill Gap Scoring
-- **Context**: Random generative outputs for career roadmaps yield inconsistent advice across multiple runs.
-- **Decision**: Implement a deterministic competency scoring matrix that maps skill deficits against verified prerequisite trees.
-- **Consequence**: Produces reproducible, trustworthy milestone sequences for engineering students.
+* **ADR-001: React Native 0.81 + Expo 54 Managed Workflow**  
+  *Rationale*: Developing separate native Android (Kotlin) and iOS (Swift) applications doubles maintenance effort and delays roadmap iterations. Adopting the Expo 54 managed workflow enables a single codebase to deploy across iOS, Android, and Web with native 60 FPS performance.
+* **ADR-002: React Navigation v7 Native Stack**  
+  *Rationale*: JavaScript-based tab navigators incur visual stutter during complex screen transitions on lower-end mobile devices. Using `@react-navigation/native-stack` leverages native platform primitives via `react-native-screens` for fluid hardware transitions.
+* **ADR-003: Deterministic Graph-Based Skill Gap Scoring**  
+  *Rationale*: Generative career roadmaps yield inconsistent advice across multiple runs. Implementing a deterministic competency scoring matrix maps skill deficits against verified prerequisite trees, guaranteeing reproducible milestone sequences.

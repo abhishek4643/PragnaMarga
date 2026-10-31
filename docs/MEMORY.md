@@ -57,3 +57,4 @@ This document maintains operational context, key architectural decisions, and ru
 - **Safe Area Insets**: Always wrap root screen content in `SafeAreaView` from `react-native-safe-area-context`.
 - **List Optimization**: Always use `FlatList` with `keyExtractor` for long question and milestone arrays. Never use `.map()` in `ScrollView`.
 - **Theme Centralization**: Always reference `src/theme/` design tokens for colors and typography; avoid hardcoding raw hex values in screen styles.
+

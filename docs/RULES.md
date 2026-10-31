@@ -87,3 +87,4 @@ This document specifies the non-negotiable coding conventions, TypeScript standa
   - `theme.colors.surface` (`#FFFFFF`)
   - `theme.colors.text` (`#182033`)
 - NEVER hardcode arbitrary hex colors directly inside `StyleSheet.create()`.
+

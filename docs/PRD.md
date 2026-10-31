@@ -75,3 +75,4 @@ Computer Science students and aspiring software engineers frequently encounter d
 - **Out of Scope (Deferred to v2.0)**:
   - Live 1-on-1 video mentoring sessions.
   - Direct employer job application submission bridges.
+
